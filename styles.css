@@ -1,0 +1,196 @@
+/* General style for the whole website */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f1ea;
+  color: #3a332c;
+  line-height: 1.6;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: #efe3d5;
+}
+
+.logo {
+  font-weight: bold;
+  color: #3a332c;
+  text-decoration: none;
+}
+
+.nav-links a {
+  margin-left: 18px;
+  color: #5c5146;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: #9b6f55;
+}
+
+/* Home hero section */
+.site-header {
+  background: linear-gradient(135deg, #efe3d5, #d9c7b6);
+}
+
+.hero {
+  max-width: 850px;
+  padding: 80px 8%;
+}
+
+.hero h1 {
+  font-size: 44px;
+  line-height: 1.1;
+  margin: 10px 0 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  font-size: 18px;
+}
+
+.tag {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #8c6d5a;
+  font-size: 13px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #9b6f55;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+/* Internal page header */
+.page-header {
+  background-color: #efe3d5;
+  padding-bottom: 45px;
+}
+
+.page-header h1,
+.page-header p {
+  max-width: 850px;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.page-header h1 {
+  margin-top: 45px;
+  font-size: 38px;
+}
+
+/* Main content */
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 8%;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card,
+.simple-section,
+.timeline-item,
+.table-section {
+  background-color: #fffaf5;
+  padding: 25px;
+  margin-bottom: 22px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(80, 60, 45, 0.08);
+}
+
+.card h2,
+.simple-section h2,
+.timeline-item h2,
+.table-section h2 {
+  color: #7a5845;
+}
+
+/* Visual diagram */
+.diagram {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #f3e7dc;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.diagram span {
+  font-weight: normal;
+  font-size: 13px;
+  color: #6f6256;
+}
+
+.arrow {
+  color: #9b6f55;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th,
+td {
+  border: 1px solid #d9c7b6;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #efe3d5;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #3a332c;
+  color: #fffaf5;
+}
+
+/* Responsive design for phones */
+@media (max-width: 750px) {
+  .navbar,
+  .diagram {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    margin-top: 15px;
+  }
+
+  .nav-links a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+}
